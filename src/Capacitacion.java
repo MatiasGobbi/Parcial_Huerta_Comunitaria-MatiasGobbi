@@ -8,11 +8,10 @@ public class Capacitacion {
     private Capacitador capacitador;
     private List<Voluntario> voluntarios = new ArrayList<>();
 
-    public Capacitacion(String tema, Date fecha, Capacitador capacitador, List<Voluntario> voluntarios) {
+    public Capacitacion(String tema, Date fecha, Capacitador capacitador) {
         this.tema = tema;
         this.fecha = fecha;
         this.capacitador = capacitador;
-        this.voluntarios = voluntarios;
     }
 
     public String getTema() {
@@ -47,12 +46,10 @@ public class Capacitacion {
         this.voluntarios = voluntarios;
     }
 
-    public void mostrarAsistentes(){
-        for (Voluntario vol : voluntarios){
-            vol.getNombre();
-            vol.getDni();
+    public void mostrarAsistentes() {
+        for (Voluntario v : voluntarios) {
+            System.out.println(v.getNombre() + " " + v.getDni());
         }
-        System.out.println(voluntarios);
     }
 
     @Override

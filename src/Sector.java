@@ -35,7 +35,13 @@ public class Sector {
         this.cultivos = cultivos;
     }
 
-
+    public List<Cosecha> getCosechasDelSector() {
+        List<Cosecha> cosechas = new ArrayList<>();
+        for (Cultivo cultivo : cultivos) {
+            cosechas.addAll(cultivo.getCosechas());
+        }
+        return cosechas;
+    }
 
     @Override
     public String toString() {

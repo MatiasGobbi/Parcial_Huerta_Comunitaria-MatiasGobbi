@@ -7,11 +7,10 @@ public class Cultivo {
     private Date fechaSiembra;
     private List<Cosecha> cosechas;
 
-    public Cultivo(String especie, TipoCultivo tipo, Date fechaSiembra, List<Cosecha> cosechas) {
+    public Cultivo(String especie, TipoCultivo tipo, Date fechaSiembra) {
         this.especie = especie;
         this.tipo = tipo;
         this.fechaSiembra = fechaSiembra;
-        this.cosechas = cosechas;
     }
 
     public String getEspecie() {

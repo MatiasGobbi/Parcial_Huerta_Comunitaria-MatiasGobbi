@@ -5,11 +5,11 @@ public class Voluntario extends Persona{
     private List<Tarea> tareasRealizadas = new ArrayList<>();
     private Turno turno;
 
-    public Voluntario(String nombre, String dni, String email, Domicilio domicilio, List<Tarea> tareasRealizadas, Turno turno) {
+    public Voluntario(String nombre, String dni, String email, Domicilio domicilio, Turno turno) {
         super(nombre, dni, email, domicilio);
-        this.tareasRealizadas = tareasRealizadas;
         this.turno = turno;
     }
+
 
     public List<Tarea> getTareasRealizadas() {
         return tareasRealizadas;
